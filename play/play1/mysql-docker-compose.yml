@@ -1,0 +1,10 @@
+services: 
+ myvolume:
+   image: mysql
+   environment:
+     MYSQL_ROOT_PASSWORD: opeyemi
+   volumes: 
+    - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
